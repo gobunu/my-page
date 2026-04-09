@@ -2,33 +2,48 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href="https://www.cs.sjtu.edu.cn/">School of Computer Science</a>, <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: jue-gong-profile.jpg
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><strong>Research:</strong> Computer Vision</p>
+    <p>Image Restoration · One-Step Diffusion</p>
+    <p>Human / Face Restoration · JPEG Artifact Removal</p>
+    <p>Shanghai, China</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am with the School of Computer Science at Shanghai Jiao Tong University. My research focuses on computer vision, especially image restoration, efficient diffusion models, and human-centric restoration tasks such as face and body restoration.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My recent work centers on one-step diffusion for faithful and efficient restoration, including face restoration, human body restoration, motion-aware degradation modeling, and semantic-oriented JPEG artifact removal. A complete publication list is available on the [publications]({{ '/publications/' | relative_url }}) page, including recent arXiv preprints.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<p>
+  <a href="https://scholar.google.com/citations?user=qaBAOaAAAAAJ&hl=zh-CN">
+    <img
+      src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fgobunu%2Fmy-page%40main%2Fassets%2Fjson%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"
+      width="105"
+      height="20"
+      alt="Google Scholar citations"
+    >
+  </a>
+</p>
+
+Research interests:
+
+- One-step diffusion models for efficient restoration
+- Human body and face restoration
+- JPEG artifact removal and degradation modeling
+- Faithful restoration with stronger generative priors
