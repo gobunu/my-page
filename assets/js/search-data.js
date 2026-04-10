@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Publications split into arXiv preprints and accepted papers.",
+          description: "Publications ordered by preprint status and release time.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/my-page/publications/";
