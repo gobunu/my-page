@@ -369,11 +369,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/my-page/books/the_godfather/";
-            },},{id: "news-released-haodiff-for-human-aware-restoration-under-mixed-degradation-and-motion-blur",
+            },},{id: "news-paper-accepted-at-cvpr-2025-osdface-one-step-diffusion-model-for-face-restoration",
+          title: 'Paper accepted at CVPR 2025: OSDFace: One-Step Diffusion Model for Face Restoration.',
+          description: "",
+          section: "News",},{id: "news-released-haodiff-for-human-aware-restoration-under-mixed-degradation-and-motion-blur",
           title: 'Released HAODiff for human-aware restoration under mixed degradation and motion blur.',
           description: "",
           section: "News",},{id: "news-released-sodiff-a-semantic-oriented-one-step-diffusion-model-for-jpeg-compression-artifacts-removal",
           title: 'Released SODiff, a semantic-oriented one-step diffusion model for JPEG compression artifacts removal.',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-at-neurips-2025-haodiff-human-aware-one-step-diffusion-via-dual-prompt-guidance",
+          title: 'Paper accepted at NeurIPS 2025: HAODiff: Human-Aware One-Step Diffusion via Dual-Prompt Guidance.',
           description: "",
           section: "News",},{id: "news-released-lcudiff-on-arxiv-for-faithful-human-body-restoration-with-upgraded-16-channel-latent-diffusion",
           title: 'Released LCUDiff on arXiv for faithful human body restoration with upgraded 16-channel latent...',
@@ -452,6 +458,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/gobunu", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6A%75%65%67%6F%6E%67.%6D%65@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-rss',
