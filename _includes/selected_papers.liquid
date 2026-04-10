@@ -1,3 +1,6 @@
 <div class="publications">
-  {% bibliography --group_by none --query @*[selected=true]* %}
+  <h2>arXiv</h2>
+  {% bibliography --group_by none --sort_by year,month --order descending --query @*[status=preprint]* %}
+  <h2>Accepted</h2>
+  {% bibliography --group_by none --sort_by year,month --order ascending --query @*[status=accepted]* %}
 </div>

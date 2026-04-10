@@ -71,11 +71,6 @@
 
       .title {
         font-weight: bolder;
-
-        .title-shortname {
-          font-weight: 500;
-          color: var(--global-text-color-light);
-        }
       }
 
       .author {
@@ -185,6 +180,14 @@
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .publications ol.bibliography li {
+    .preview {
+      box-shadow: 4px 4px 0 rgba(30, 30, 30, 0.2);
     }
   }
 }
