@@ -33,7 +33,7 @@ My recent work centers on one-step diffusion for faithful and efficient restorat
 Education:
 
 - 2022-2026: B.Eng. in Biomedical Engineering, Shanghai Jiao Tong University
-- 2026-2031: Direct Ph.D. track, advised by Prof. Yulun Zhang, School of Computer Science, Shanghai Jiao Tong University
+- 2026-2031: Direct Ph.D. track, advised by Prof. [Yulun Zhang](https://yulunzhang.com/), School of Computer Science, Shanghai Jiao Tong University
 
 Research interests:
 
