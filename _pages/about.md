@@ -20,7 +20,7 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 5
+  limit: 8
 
 latest_posts:
   enabled: false
@@ -30,16 +30,10 @@ I am with the School of Computer Science at Shanghai Jiao Tong University. My re
 
 My recent work centers on one-step diffusion for faithful and efficient restoration, including face restoration, human body restoration, motion-aware degradation modeling, and semantic-oriented JPEG artifact removal. A complete publication list is available on the [publications]({{ '/publications/' | relative_url }}) page, including recent arXiv preprints.
 
-<p>
-  <a href="https://scholar.google.com/citations?user=qaBAOaAAAAAJ&hl=zh-CN">
-    <img
-      src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fgobunu%2Fmy-page%40main%2Fassets%2Fjson%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"
-      width="105"
-      height="20"
-      alt="Google Scholar citations"
-    >
-  </a>
-</p>
+Education:
+
+- 2022-2026: B.Eng. in Biomedical Engineering, Shanghai Jiao Tong University
+- 2026-2031: Direct Ph.D. track, advised by Prof. Yulun Zhang, School of Computer Science, Shanghai Jiao Tong University
 
 Research interests:
 

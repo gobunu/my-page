@@ -1,7 +1,3 @@
-"chen":
-  - firstname: ["Zheng"]
-    url: https://zheng-chen.cn/
-
-"zhang":
-  - firstname: ["Yulun"]
-    url: https://yulunzhang.com/
+# Keep coauthors plain text by default.
+# Add urls only for authors that should be clickable in publication lists.
+{}
