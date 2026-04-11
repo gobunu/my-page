@@ -1,19 +1,43 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  // Add toggle functionality to abstract, award and bibtex buttons.
+  // Use delegated handlers for reliable mobile and desktop behavior.
+  $(document).on("click", ".links .abstract", function (event) {
+    event.preventDefault();
+    const $entry = $(this).closest(".row");
+    $entry.find(".abstract.hidden").toggleClass("open");
+    $entry.find(".award.hidden.open").removeClass("open");
+    $entry.find(".bibtex.hidden.open").removeClass("open");
   });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+
+  $(document).on("click", ".links .award", function (event) {
+    event.preventDefault();
+    const $entry = $(this).closest(".row");
+    $entry.find(".abstract.hidden.open").removeClass("open");
+    $entry.find(".award.hidden").toggleClass("open");
+    $entry.find(".bibtex.hidden.open").removeClass("open");
   });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+
+  $(document).on("click", ".links .bibtex", function (event) {
+    event.preventDefault();
+    const $entry = $(this).closest(".row");
+    $entry.find(".abstract.hidden.open").removeClass("open");
+    $entry.find(".award.hidden.open").removeClass("open");
+    $entry.find(".bibtex.hidden").toggleClass("open");
+  });
+
+  // Fallback for mobile: ensure navbar dropdown children are tappable in collapsed menu.
+  $(document).on("click", ".navbar .dropdown-toggle", function (event) {
+    if (window.matchMedia("(max-width: 575.98px)").matches) {
+      event.preventDefault();
+      event.stopPropagation();
+      const $menu = $(this).next(".dropdown-menu");
+      $(".navbar .dropdown-menu").not($menu).removeClass("show");
+      $menu.toggleClass("show");
+    }
+  });
+
+  $(document).on("click", ".navbar .dropdown-item", function () {
+    $(".navbar .dropdown-menu").removeClass("show");
   });
   $("a").removeClass("waves-effect waves-light");
 
