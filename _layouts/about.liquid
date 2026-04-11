@@ -14,66 +14,67 @@ layout: default
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
-  <!-- Social -->
-  {% if page.social %}
-    <div class="social social-top social-about">
-      <div class="contact-icons">
-        {% if site.data.socials.scholar_userid %}
-          <a
-            href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}"
-            title="Google Scholar"
-            aria-label="Google Scholar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ai ai-google-scholar"></i>
-          </a>
-        {% endif %}
-        {% if site.data.socials.github_username %}
-          <a
-            href="https://github.com/{{ site.data.socials.github_username }}"
-            title="GitHub"
-            aria-label="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        {% endif %}
-        {% if site.data.socials.email %}
-          <a href="mailto:{{ site.data.socials.email | encode_email }}" title="Email" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        {% endif %}
-      </div>
-    </div>
-  {% endif %}
-
   <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+    <div class="about-hero">
+      <div class="about-main">
+        {% if page.social %}
+          <div class="social social-top social-about">
+            <div class="contact-icons">
+              {% if site.data.socials.scholar_userid %}
+                <a
+                  href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}"
+                  title="Google Scholar"
+                  aria-label="Google Scholar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="ai ai-google-scholar"></i>
+                </a>
+              {% endif %}
+              {% if site.data.socials.github_username %}
+                <a
+                  href="https://github.com/{{ site.data.socials.github_username }}"
+                  title="GitHub"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              {% endif %}
+              {% if site.data.socials.email %}
+                <a href="mailto:{{ site.data.socials.email | encode_email }}" title="Email" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              {% endif %}
+            </div>
+          </div>
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+        <div class="about-content clearfix">{{ content }}</div>
+      </div>
+
+      {% if page.profile %}
+        <aside class="profile about-profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </aside>
+      {% endif %}
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}

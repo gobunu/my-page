@@ -46,14 +46,16 @@ body.sticky-bottom-footer {
 
 .post.about-page {
   .post-header {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
   }
 
   .social.social-top.social-about {
-    margin-top: -0.25rem;
-    margin-bottom: 0.85rem;
+    margin-top: 0;
+    margin-bottom: 1.1rem;
 
     .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: flex-start;
       gap: 0.8rem;
     }
@@ -63,8 +65,31 @@ body.sticky-bottom-footer {
     }
   }
 
-  .profile.float-right {
-    margin-top: -2.1rem;
+  .about-content {
+    clear: none;
+  }
+
+  .about-profile {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 576px) {
+    .about-hero {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .about-main {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+
+    .about-profile {
+      flex: 0 0 30%;
+      width: 30%;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -77,21 +102,6 @@ body.sticky-bottom-footer {
 
   .news .table-responsive {
     max-height: 14rem !important;
-  }
-
-  .post.about-page {
-    .post-header {
-      margin-bottom: 0.75rem;
-    }
-
-    .social.social-top.social-about {
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-
-    .profile.float-right {
-      margin-top: 0;
-    }
   }
 }
 
