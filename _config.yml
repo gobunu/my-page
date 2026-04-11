@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Jue
 middle_name:
 last_name: Gong
-contact_note: >
-  The easiest way to follow my recent work is through Google Scholar and GitHub.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal homepage of Jue Gong. Research interests include image restoration, human-centric restoration, and one-step diffusion models.
 footer_text: >

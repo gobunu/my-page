@@ -44,6 +44,30 @@ body.sticky-bottom-footer {
   margin-bottom: 1rem;
 }
 
+.post.about-page {
+  .post-header {
+    margin-bottom: 0.6rem;
+  }
+
+  .social.social-top.social-about {
+    margin-top: -0.25rem;
+    margin-bottom: 0.85rem;
+
+    .contact-icons {
+      justify-content: flex-start;
+      gap: 0.8rem;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .profile.float-right {
+    margin-top: -2.1rem;
+  }
+}
+
 @media (max-width: 576px) {
   .social.social-top .contact-icons {
     display: flex;
@@ -53,6 +77,21 @@ body.sticky-bottom-footer {
 
   .news .table-responsive {
     max-height: 14rem !important;
+  }
+
+  .post.about-page {
+    .post-header {
+      margin-bottom: 0.75rem;
+    }
+
+    .social.social-top.social-about {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .profile.float-right {
+      margin-top: 0;
+    }
   }
 }
 
