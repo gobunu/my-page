@@ -33,3 +33,9 @@ nav_order: 3
 - Efficient diffusion and one-step generation
 - Degradation-aware restoration pipelines
 - Benchmarks and datasets for practical restoration
+
+<div class="mt-4 pt-2">
+  <a href="https://s01.flagcounter.com/more/YfJr" target="_blank" rel="noopener noreferrer" aria-label="Visitor map">
+    <img src="https://s01.flagcounter.com/map/YfJr/size_t/txt_555555/border_DDDDDD/pageviews_0/viewers_3/flags_0/" alt="Visitor map" style="max-width: 160px; height: auto; opacity: 0.85;">
+  </a>
+</div>
