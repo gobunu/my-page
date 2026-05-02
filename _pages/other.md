@@ -2,17 +2,10 @@
 layout: page
 permalink: /other/
 title: other
-description: Patent, code resources, and additional links.
+description: Code resources and additional links.
 nav: true
 nav_order: 3
 ---
-
-## Patent
-
-- **Image Restoration Method and System Based on One-Step Diffusion Model and Multimodal CFG**  
-  Chinese invention patent application (published), application no. `CN202510829391.6`, publication no. `CN120707410A`, filed on June 20, 2025, and published on September 26, 2025.  
-  Applicant: Shanghai Jiao Tong University. Inventors: Jue Gong, Yulun Zhang, Linghe Kong, Xiaokang Yang.  
-  [Filing notice PDF]({{ '/assets/pdf/patent_multimodal_cfg_restoration_cn.pdf' | relative_url }})
 
 ## Code and Resources
 
