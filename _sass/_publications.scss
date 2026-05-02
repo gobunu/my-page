@@ -50,12 +50,16 @@
         abbr {
           display: inline-block;
           background-color: color-mix(in srgb, var(--global-theme-color) 70%, #8a8f98 30%);
-          filter: saturate(72%);
+          border: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+          box-shadow: 0 4px 12px rgba(20, 32, 52, 0.08);
+          filter: none;
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          color: #22324a !important;
+          font-weight: 700;
+          letter-spacing: 0;
 
           a {
-            color: white;
+            color: inherit;
 
             &:hover {
               text-decoration: none;

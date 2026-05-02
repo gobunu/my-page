@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'activesupport', '>= 7.0', '< 8.0'
+gem 'jekyll-sass-converter', '>= 3.0', '< 4.0'
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do

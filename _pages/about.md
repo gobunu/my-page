@@ -28,7 +28,7 @@ latest_posts:
 
 I am with the School of Computer Science at Shanghai Jiao Tong University. My research focuses on computer vision, especially image restoration, efficient diffusion models, and human-centric restoration tasks such as face and body restoration.
 
-My recent work centers on one-step diffusion for faithful and efficient restoration, including face restoration, human body restoration, motion-aware degradation modeling, and semantic-oriented JPEG artifact removal. A complete publication list is available on the [publications]({{ '/publications/' | relative_url }}) page, including recent arXiv preprints.
+My recent work centers on one-step diffusion for faithful and efficient restoration, including face restoration, face fill-light enhancement, human body restoration, motion-aware degradation modeling, and semantic-oriented JPEG artifact removal. A complete publication list is available on the [publications]({{ '/publications/' | relative_url }}) page, including recent arXiv preprints.
 
 Education:
 
@@ -38,6 +38,6 @@ Education:
 Research interests:
 
 - One-step diffusion models for efficient restoration
-- Human body and face restoration
+- Human body and face restoration, including face fill-light enhancement
 - JPEG artifact removal and degradation modeling
 - Faithful restoration with stronger generative priors

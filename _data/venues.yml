@@ -1,19 +1,23 @@
 "AAAI":
   url: https://aaai.org/conference/aaai/
-  color: "#1976d2"
+  color: "oklch(0.82 0.090 245)"
 
 "arXiv":
   url: https://arxiv.org/
-  color: "#b31b1b"
+  color: "oklch(0.82 0.088 28)"
 
 "CVPR":
   url: https://cvpr.thecvf.com/
-  color: "#1a237e"
+  color: "oklch(0.80 0.100 285)"
+
+"CVPRW":
+  url: https://cvpr.thecvf.com/Conferences/2026/Workshops
+  color: "oklch(0.82 0.088 260)"
 
 "ICML":
   url: https://icml.cc/
-  color: "#ef6c00"
+  color: "oklch(0.83 0.105 70)"
 
 "NeurIPS":
   url: https://neurips.cc/
-  color: "#00695c"
+  color: "oklch(0.80 0.090 175)"

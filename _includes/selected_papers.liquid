@@ -1,3 +1,5 @@
+{% include publication_year_styles.liquid %}
+
 <div class="publications">
-  {% bibliography --group_by none --sort_by sortkey --order descending %}
+  {% bibliography --group_by year --sort_by sortkey --order descending %}
 </div>
