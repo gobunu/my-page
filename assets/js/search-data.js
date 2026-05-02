@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Publications ordered by preprint status and release time.",
+          description: "Publications grouped by year and ordered by release time.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -389,6 +389,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-serving-as-a-reviewer-for-icml-2026",
           title: 'Serving as a reviewer for ICML 2026.',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-at-icml-2026-light-up-your-face-a-physically-consistent-dataset-and-diffusion-model-for-face-fill-light-enhancement-project-page-is-now-online",
+          title: 'Paper accepted at ICML 2026: Light Up Your Face: A Physically Consistent Dataset...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
