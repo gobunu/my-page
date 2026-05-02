@@ -34,8 +34,10 @@ nav_order: 3
 - Degradation-aware restoration pipelines
 - Benchmarks and datasets for practical restoration
 
-<div class="mt-4 pt-2">
+<div class="mt-4 pt-2 small text-muted">
+  <div class="mb-1">Visitor map</div>
   <a href="https://s01.flagcounter.com/more/YfJr" target="_blank" rel="noopener noreferrer" aria-label="Visitor map">
-    <img src="https://s01.flagcounter.com/map/YfJr/size_t/txt_555555/border_DDDDDD/pageviews_0/viewers_3/flags_0/" alt="Visitor map" style="max-width: 160px; height: auto; opacity: 0.85;">
+    <img src="https://s01.flagcounter.com/map/YfJr/size_t/txt_555555/border_DDDDDD/pageviews_0/viewers_3/flags_0/" alt="Visitor map" style="max-width: 220px; height: auto;">
   </a>
+  <div class="mt-1"><a href="https://s01.flagcounter.com/more/YfJr" target="_blank" rel="noopener noreferrer">View country flags</a></div>
 </div>
