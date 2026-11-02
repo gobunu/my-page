@@ -171,6 +171,49 @@
         transition: all 0.15s ease;
       }
 
+      div.bibtex figure.highlight {
+        background-color: #e2edf2;
+        border-radius: 6px;
+        overflow-x: hidden;
+
+        html[data-theme="dark"] & {
+          background-color: #273846;
+
+          pre {
+            color: #f0f4f7;
+
+            .nc {
+              color: #a9c5ef;
+            }
+
+            .na {
+              color: #86d5d4;
+            }
+          }
+        }
+
+        pre {
+          background-color: transparent;
+          color: #111;
+          text-align: left;
+          white-space: pre-wrap;
+          overflow-wrap: anywhere;
+          overflow-x: hidden;
+
+          span {
+            color: inherit;
+          }
+
+          .nc {
+            color: #40568c;
+          }
+
+          .na {
+            color: #006c78;
+          }
+        }
+      }
+
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
       }
